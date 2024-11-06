@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ciberniada Sportivă</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
   </head>
   <body>
-    <div class="pagina1">
+    <header>
+        <nav id="nav">
+            <div id="mySidenav" class="menu">
+                <div class="upper"> 
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+                <div class="links">
+                    <span><a class="scurtaturi" href="#home">Home</a></span>
+                    <span><a class="scurtaturi" href="#sporturi">Sporturi</a></span> 
+                    <span><a class="scurtaturi" href="#formular">Formular</a></span>
+                </div>
+                </div>
+                <div class="menulogo"><img src="/imagini/logo.png" alt="logo"></div>
+            </div>
+
+            <div class="navbar">
+                <div class="menu-button"><i class="fa-solid fa-bars" onclick="openNav()"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="pagina1" id="home">
       <div class="fundal">
         <img src="/imagini/fundal.jpg" alt="" />
         <div class="logo">
@@ -15,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div class="pagina2">
+    <div class="pagina2" id="sporturi">
       <div class="descriere-container">
         <p class="descriere">
           Te-ai săturat de cursuri interminabile la materii precum Economie sau
@@ -51,13 +72,18 @@
           <h3>Semimaraton</h3>
           <p>5</p>
         </div>
-     
+    </div>
+    <div class="pagina3">
+         <div class="text2">
+      <p>Ciberniada Sportivă promite să fie o săptămână de neuitat pentru toți studenții CSIE! Înscrierile vor avea loc în perioada 17 februarie - 3 martie, iar turneele se vor desfășura de pe 10 până pe 14 martie în campusul Facultății de Agronomie. Fie că ești participant, fie că vii să-ți susții colegii, acest eveniment este despre energie și spirit de echipă. Ia-ți prietenii și vino să petrecem împreună o săptămână plină de sport, distracție și amintiri frumoase! Vor fi turnee atât la masculin cât și la feminin, deci nu rata ocazia de a vedea facultatea într-o lumină nouă, una plină de entuziasm și pasiune pentru mișcare!</p>
+    </div>
+      <div class="formular" id="formular">
+        <h3 class="titlu-form">Formular de înscriere</h3>
+        <form action="">
 
-    </div>
-    <div class="text2">
-      <p>Ciberniada Sportivă promite să fie o săptămână de neuitat pentru toți studenții CSIE! Înscrierile vor avea loc în perioada 17 februarie - 3 martie, iar turneele se vor desfășura de pe 10 până pe 15 martie în campusul Facultății de Agronomie. Fie că ești participant, fie că vii să-ți susții colegii, acest eveniment este despre energie și spirit de echipă. Ia-ți prietenii și vino să petrecem împreună o săptămână plină de sport, distracție și amintiri frumoase! Vor fi turnee atât la masculin cât și la feminin, deci nu rata ocazia de a vedea facultatea într-o lumină nouă, una plină de entuziasm și pasiune pentru mișcare!</p>
-    </div>
-          <div class="harta">
+        </form>
+      </div>
+      <div class="locatie">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1232.9128893829306!2d26.062063604413083!3d44.47186724708755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2023a6710f441%3A0xf8dd0806506d200d!2sTeren%20de%20sport%2C%20Bulevardul%20Expozi%C8%9Biei%2C%20Bucure%C8%99ti%20012244!5e1!3m2!1sro!2sro!4v1730823674817!5m2!1sro!2sro"
           width="100%"
@@ -67,9 +93,21 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    <div class="pagina3">
-      <form action=""></form>
-      <div class="bara-contact"></div>
+      <div class="bara-contact">
+        <a href="https://www.instagram.com/ciberniadasportiva?igsh=MTdkMHdlbnlubjh0ag%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61567570150542&mibextid=LQQJ4d"> <i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+      </div>
     </div>
+    <script>
+            function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    </script>
   </body>
 </html>

@@ -213,7 +213,7 @@ html{
     height: 100vh;
     background-image: url(/imagini/fundal3.jpg);
     background-size: cover;
-    background-position-y: -220px;
+    background-position-y: -200px;
     background-repeat: no-repeat;
 }
 .titlu-form{

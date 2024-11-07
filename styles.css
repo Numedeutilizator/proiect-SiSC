@@ -8,12 +8,14 @@
 html{
     scroll-behavior: smooth !important;}
 .pagina1{
+    background-image: url(/imagini/fundal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-}
-.fundal img {
-  width: 100%;
-  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .fundal2{
   width:100%;
@@ -26,12 +28,9 @@ html{
   z-index: -1;
 }
 
-.logo img {
+.logo{
   width: 300px;
   height: 300px;
-  position: absolute;
-  top: 30vh;
-  left: 40vw;
 }
 .pagina2 {
   height: 100vh;
@@ -52,7 +51,6 @@ html{
   margin-top: 32vh;
   box-shadow: 0 0 20px 2px #000000;
   z-index: -1;
-
 }
 .descriere-container, .text2 {
   width: 100%;
@@ -225,3 +223,94 @@ html{
 .upper{
     z-index: 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .fundal2{
+        background-position-y: 0;
+    }
+    .formular{
+        background-position-y: 0;
+    }
+    .sport-grid p {
+        bottom: 60px;
+        left: 10px;
+    }
+    .descriere-container p, .text2 {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+  }
+
+  @media screen and (max-width:900px) {
+      .sport-grid {
+        width: 150px;
+        height: 28vh;
+      }
+      .sport-grid h3 {
+        padding: 10px;
+        font-size: 16px;
+      }
+      
+      .sport-grid p {
+        bottom: 30px;
+        left: 10px;
+        font-size: 150px;
+      }
+
+    .descriere-container p, .text2 {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+  }
+
+  @media screen and (max-width:750px) {
+    .sport-grid {
+        width: 120px;
+        height: 24vh;
+      }
+      .sport-grid h3 {
+        padding: 10px;
+        font-size: 12px;
+      }
+      
+      .sport-grid p {
+        top: 10px;
+        left: 10px;
+        font-size: 100px;
+      }
+      .text2 p{
+        padding: 20px;
+      }
+      .descriere-container p, .text2 p{
+        font-size: 13px;
+        line-height: 1.5;
+      }
+  }
+
+  @media screen and (max-width:550px) {
+    .sport-grid {
+        width: 100px;
+        height: 24vh;
+      }
+      .sport-grid h3 {
+        padding: 10px;
+        font-size: 10px;
+      }
+      .sport-grid p {
+        top: 50px;
+        left: 10px;
+        font-size: 50px;
+      }
+      .text2 p{
+        padding: 14px;
+        font-size: 12px;
+      }
+      .descriere-container p{
+        font-size: 13px;
+        padding: 50px;
+      }
+  }
+
+
+
+  
